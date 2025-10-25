@@ -1,6 +1,6 @@
-# HTML5-Game-Toturial-RUN-Dandelion
+# RUN-Dandelion
 
-RUN-Dandelion 是一個使用 Phaser 製作的 HTML5 2D 跑酷遊戲專案，玩家將操作角色在場景中奔跑，挑戰時間與速度。
+RUN-Dandelion 為一款以 Phaser 製作的 HTML5 2D 跑酷遊戲，玩家操作角色在場景中奔跑、閃避障礙並在限時內生存下去。
 
 ---
 
