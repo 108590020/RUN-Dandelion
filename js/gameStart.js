@@ -7,7 +7,7 @@ const gameStart = {
         this.load.image('bg3', '../images/bg/bg3.png');
         this.load.image('bg4', '../images/bg/bg4.png');
         this.load.image('footer', '../images/bg/footer.png');
-        this.load.spritesheet('user', '../images/player.png', {frameWidth: 144, frameHeight: 120});
+        // this.load.spritesheet('user', '../images/player.png', {frameWidth: 144, frameHeight: 120});
         
         this.load.image('logo', '../images/ui/txt-title.png');
         this.load.image('startBtn', '../images/ui/btn-press-start.png');

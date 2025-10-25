@@ -7,12 +7,13 @@ const config = {
         default: 'arcade',
         arcade: {
             gravity: {
-                y: 700
+                y: 850 // 世界重力（像素 / 秒^2）
             },
             debug: true
         },
     },
     scene: [ gamePlay,
-            gameStart,  ]
+        gameStart
+        ]
 }
 const game = new Phaser.Game(config);
