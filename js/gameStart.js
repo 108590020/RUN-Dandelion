@@ -11,7 +11,7 @@ const gameStart = {
         
         this.load.image('logo', '../images/ui/txt-title.png');
         this.load.image('startBtn', '../images/ui/btn-press-start.png');
-        this.load.image('playerEnd', '../images/ui/player-end.png');
+        this.load.image('dandelion', '../images/ui/player-end.png');
     },
     create: function(){
         //The coordinate system direction of the canvas
@@ -29,13 +29,17 @@ const gameStart = {
         this.logo.setScale(0.5);
         this.startBtn = this.add.image(w/2, h/2 +30,'startBtn');
         this.startBtn.setScale(0.5);
-        this.playerEnd = this.add.image(w/2, h/2 +105,'playerEnd');
-        this.playerEnd.setScale(0.3);
+        this.dandelion = this.add.image(w/2, h/2 +105,'dandelion');
+        this.dandelion.setScale(0.3);
 
         this.startBtn.setInteractive();
         this.startBtn.on('pointerdown', () => {
             this.scene.start('gamePlay');
         })
+        this.input.keyboard.once('keydown-SPACE', () => {
+            this.scene.start('gamePlay');
+        });
+
     },
     update: function(){
         this.bg3.tilePositionX += 1;
